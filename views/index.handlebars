@@ -1,0 +1,50 @@
+<div class="container text-center">
+  <h1>Taco Time</h1>
+  <img id= "tacoImg" src="assets/img/taco.png" alt="taco">
+  <!-- HandleBars -->
+  <div class="row">
+    <div class="col-2">
+    </div>
+    <div class="col-4">
+      <ul class="list-group">
+        {{#each taco}}
+        {{#unless devoured}}
+        <li class="list-group-item text-left">
+          <span class="align-middle">{{this.id}}<span>. </span>{{this.taco_name}}</span> <span><button data-id="{{this.id}}" class="devour btn btn-secondary mb-2 float-right">Devour</button></span>
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-4">
+      <ul class="list-group">
+        {{#each taco}}
+        {{#if devoured}}
+        <li class="list-group-item text-left disabled">
+          <span class="align-middle">{{this.id}}<span>. </span>{{this.taco_name}}</span>
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-2">
+    </div>
+  </div>
+
+
+
+  <!-- Standard HTML -->
+  <form>
+    <div class="form-row justify-content-center">
+      <div class="col-4">
+        <label class="sr-only" for="inlineFormInput">Taco</label>
+        <input type="text" class="form-control mb-2" id="tacoForm">
+      </div>
+      <div class="col-auto">
+        <button id="tacoSubmit" type="submit" class="btn btn-secondary mb-2">Submit</button>
+      </div>
+    </div>
+    <p>Add your favorite taco so you can eat it!</p>
+  </form>
+</div>

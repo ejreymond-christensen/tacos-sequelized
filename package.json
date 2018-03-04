@@ -1,0 +1,27 @@
+{
+  "name": "ut-tacos-sequelized",
+  "version": "1.0.0",
+  "description": "tacos sequelized",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejreymond-christensen/ut-tacos-sequelized.git"
+  },
+  "author": "elliot reymond-christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejreymond-christensen/ut-tacos-sequelized/issues"
+  },
+  "homepage": "https://github.com/ejreymond-christensen/ut-tacos-sequelized#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.35.1"
+  }
+}

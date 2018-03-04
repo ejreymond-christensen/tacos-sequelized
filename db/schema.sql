@@ -1,0 +1,14 @@
+### Schema
+
+DROP DATABASE IF EXISTS tacos_db;
+
+CREATE DATABASE tacos_db;
+
+USE tacos_db;
+
+CREATE TABLE tacos
+(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+taco_name VARCHAR(100) NULL,
+devoured BOOLEAN NOT NULL DEFAULT 0
+);

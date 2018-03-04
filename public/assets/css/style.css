@@ -1,0 +1,26 @@
+html{
+  font-family: 'Lato', sans-serif;
+  background: #edb51a;
+  background-position: center;
+  background-size: cover;
+
+}
+body{
+   background: #edb51a;
+   /* background: linear-gradient(to top bottom, #edb51a, 	#edb51a); */
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  font-family: 'Londrina Solid', cursive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#tacoImg{
+  max-width: 150px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+form{
+  margin-top: 15px;
+}
