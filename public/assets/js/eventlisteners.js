@@ -10,7 +10,7 @@ $(document).ready(function(){
   //   });
   // }
   // getTacos();
-  
+
   //Listens for a submit for new taco.
   $("#tacoSubmit").on("click", function(event){
     event.preventDefault();
@@ -37,6 +37,19 @@ $(document).ready(function(){
     $.ajax("/api/tacos/" + id, {
       type: "PUT",
       data: devoured
+    }).then(
+      function() {
+        location.reload();
+      }
+    );
+  });
+
+  //listens for a submit to devour the taco.
+  $(".delete").on("click", function(event) {
+    var id = $(this).data("id");
+
+    $.ajax("/api/tacos/" + id, {
+      type: "DELETE"
     }).then(
       function() {
         location.reload();

@@ -30,4 +30,13 @@ module.exports =function(app){
         res.json("index");
       });
   });
+
+  app.delete("/api/tacos/:id", function(req, res) {
+      db.tacos.destroy({
+          where: {id: req.params.id}
+      }).then(function(){
+        console.log("destroyed");
+        res.json("index");
+      });
+  });
 };
