@@ -1,4 +1,4 @@
-# ut-tacos-sequelized
+# tacos-sequelized
 My taco eating app (ut-taco), using sequelize.
 
 ### Taco Time
@@ -10,4 +10,4 @@ One can add a taco by filling out the input form and hitting submit. This will a
 ### How to run the program
 you can go to : https://taco-time.herokuapp.com/
 
-or clone the repo `ut-taco-sequelized`, clone the repo, `npm install` all the node dependencies and host it on our own node server. You will need to add the SQL schema to initialize the database.
+or clone the repo `taco-sequelized`, clone the repo, `npm install` all the node dependencies and host it on our own node server. You will need to add the SQL schema to initialize the database.
