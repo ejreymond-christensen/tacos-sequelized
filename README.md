@@ -1,5 +1,5 @@
 # tacos-sequelized
-My taco eating app (ut-taco), using sequelize.
+My taco eating app (taco), using sequelize.
 
 ### Taco Time
 This is a taco creator that allows the user to devour the taco afterwards. The app is handled with node and express. Handlebars is used for the templating system to generate HTML and sequelize to interact with SQL.
